@@ -1,0 +1,33 @@
+{
+  "name": "basicinformationalsite",
+  "version": "1.0.0",
+  "description": "The Odin Project Node JS project # 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkimb0/basicInformationalSite.git"
+  },
+  "keywords": [
+    "TOP",
+    "The",
+    "Odin",
+    "Project",
+    "NodeJS"
+  ],
+  "author": "David K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkimb0/basicInformationalSite/issues"
+  },
+  "homepage": "https://github.com/dkimb0/basicInformationalSite#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
