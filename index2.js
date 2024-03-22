@@ -7,14 +7,11 @@ const server = http.createServer((req, res) => {
   let filePath = path.join(
     __dirname,
     'public',
-    req.url === '/' ? 'index.html' : req.url
+    req.url === '/' ? 'index' : req.url
   );
-
 
   //extension of file
   let extname = path.extname(filePath);
-
-  //Initial content type
   let contentType = 'text/html';
 
   //Check ext and set content type
@@ -34,6 +31,10 @@ const server = http.createServer((req, res) => {
     case '.jpg':
       contentType = 'image/jpg';
       break;
+  }
+
+  if (contentType === 'text/html') {
+    filePath = path.join(filePath + '.html');
   }
 
   //read file
